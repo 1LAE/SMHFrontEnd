@@ -8294,6 +8294,24 @@
 
 
      -->
+
+
+    <div id="chatPopUp" style="display: none; position: absolute; z-index: 10000; padding-left: 372px; padding-top: 710px;">
+      <img
+            src="images/chat4.svg"
+            loading="lazy"
+            alt=""
+          />
+    </div>
+
+    <div id="notificationsPopUp" style="display: none; position: absolute; z-index: 10000; padding-left: 350px; padding-top: 700px;">
+      <img
+            src="images/notifications.svg"
+            loading="lazy"
+            alt=""
+          />
+    </div>
+
     <section class="mainheading_toppagelocation">
       <div
         fb-count-delay="800"
@@ -8665,7 +8683,7 @@
         class="w-layout-cell cell_rightbottom_controlpanel"
       >
         <section class="section_rightcontrol_highpanel">
-          <div class="button_open_notifications_profile ghostbox">
+          <div class="button_open_notifications_profile ghostbox" id="notificationButton">
             <div class="texthint_open_notifications_profile">Уведомления</div>
             <img
               src="images/Primary-8.svg"
@@ -8674,7 +8692,8 @@
               class="image_notifications"
             />
           </div>
-          <div class="button_openlivestream ghostbox">
+          <!--  -->
+          <div class="button_openlivestream ghostbox" style="display: none;">
             <div class="image_livestream_design1"></div>
             <div class="image_livestream_design2"></div>
             <img
@@ -8684,16 +8703,17 @@
               class="image_livestream_design3"
             />
           </div>
+          <!--  -->
           <div class="button_open_notifications_profile ghostbox">
             <div class="texthint_open_notifications_profile">
-              Профиль<br />сотрудника
+              Реестр посылок
             </div>
-            <img
+            <!-- <img
               src="images/Primary-6.svg"
               loading="lazy"
               alt=""
               class="image_profile"
-            />
+            /> -->
           </div>
         </section>
         <section class="section_rightcontrol_middlepanel">
@@ -8731,7 +8751,7 @@
           </section>
         </section>
         <section class="section_rightcontrol_bottompanel">
-          <div class="button_open_support_quide ghostboxgrey">
+          <div class="button_open_support_quide ghostboxgrey" id="chatPopUpButton">
             <div class="texthint_open_support_guide">Поддержка</div>
             <img
               src="images/Primary-2.svg"
@@ -11891,6 +11911,8 @@
     <script src="js/mailPopUp.js" type="text/javascript"></script>
     <script src="js/manualControlPannel.js" type="text/javascript"></script>
     <script src="js/transferPopUp.js" type="text/javascript"></script>
+    <script src="js/chat.js" type="text/javascript"></script>
+    <script src="js/notifications.js" type="text/javascript"></script>
     <script src="js/init.js" type="text/javascript"></script>
     <!-- <script src="js/webflow.js" type="text/javascript"></script> -->
     
