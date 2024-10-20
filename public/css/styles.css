@@ -318,3 +318,28 @@ img.image_waitforcontainer {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* .notificationsUnread {
+    width: 40px;
+    height: 40px;
+    margin-right: -50px;
+    background-color: #5d79ee;
+    border-radius: 40px;
+    border: 2px solid #f1f1f1; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} */
+
+.notificationsUnread {
+    width: 40px;
+    height: 40px;
+    background-color: #5d79ee;
+    margin-right: -50px;
+    border-radius: 40px;
+    border: 2px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

@@ -2040,7 +2040,8 @@
   .image_notifications {
     flex: 0 auto;
     align-self: auto;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .image_support, .image_quide, .image_profile {
