@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <style>
+        #open-site-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function openSite() {
+            var width = 912; // Ширина нового окна
+            var height = 1216; // Высота нового окна
+            var left = (screen.width - width) / 2; // Центрируем окно по горизонтали
+            // var top = (screen.height - height) / 2; // Центрируем окно по вертикали
+            var top = 0; // Окно будет открыто вверху
+            var newWindow = window.open('index_loh.html')
+            // , '_blank', 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top + ',resizable=yes' + ',scrollbars=yes');
+
+            if (!newWindow) {
+                alert('Please allow popups for this website');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 style="margin-top: 20%; margin-left: 50%; transform: translateX(-50%); text-align: center;">Разрешите всплывающие окна <br>в Вашем браузере</h1>
+    <button style="width: 200px; height: 70px; margin-left: 50%; transform: translateX(-50%); font-size: medium;" id="open-site-btn" onclick="openSite()">Перейти в панель управления</button>
+</body>
+</html>

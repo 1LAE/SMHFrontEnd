@@ -1,0 +1,345 @@
+div.containersSlider {
+    align-items: center;
+    background-color: #edeef2; /* Серый фон */
+    border-radius: 10px; /* Скругленные углы */
+    margin: 20px; /* Отступ от края родительского контейнера */
+    /* padding: 10px; */
+    /* justify-content: center; */
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  div.containersSlider div {
+    display: inline-block;
+  }
+  
+p.percent_container {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+img.wait_icon {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+div.containerInfo {
+    align-items: center;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+p.containerNumber {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    margin: auto;
+}
+
+div.rightMailPannel {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+div.containerBox {
+    width: 100px; /* Ширина квадрата */
+    height: 100px; /* Высота квадрата */
+    border-radius: 13px; /* Скругленные углы */
+    border-style: solid;
+    border-width: 2px;
+    display: flex; /* Используем flexbox для центрирования текста */
+    /* flex-direction: column; */
+    justify-content: center; /* Центрирование текста по горизонтали */
+    align-items: center; /* Центрирование текста по вертикали */
+    
+}
+
+div.boxEmpty {
+    /* --color: black;  */
+    --box-shadow: 0px 4px 2px 0px #7a92f3;
+    --background-color: rgba(165, 179, 231, 0.48); /* Серый фон */
+    --border-color: white;
+
+    /* color: var(--color); */
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+}
+
+div.boxWait {
+    /* --color: black;  */
+    --box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2);
+    --background-color: #f0c35a; /* Серый фон */
+    --border-color: #191919;
+
+    /* color: var(--color); */
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+}
+
+div.boxRobot {
+    /* --color: black;  */
+    --box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2);
+    --background-color: #f3f5fd; /* Серый фон */
+    --border-color: #191919;
+
+    /* color: var(--color); */
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+}
+
+div.boxRobotFull {
+    /* --color: black;  */
+    --box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2);
+    --background-color: #f86969; /* Серый фон */
+    --border-color: #191919;
+
+    /* color: var(--color); */
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+}
+
+img.image_waitforcontainer {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.new_field_input_barcode {
+    /* clear: none; */
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: transparent;
+    height: 30px;
+    margin-top: 0;
+    display: flex;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content div:hover {background-color: #ddd;}
+
+
+/* Переделать на нажатие кнопки! */
+/* .w-dropdown:hover {
+    .dropdown-content {display: block;}
+} */
+
+
+
+.transfer-pop-up {
+    z-index: 5;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    background-color: rgba(255, 255, 255, .8);
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    width: 0;
+    height: 0;
+    display: none;
+    position: relative;
+}
+
+.transfer-main-cover {
+    background-color: #fff;
+    border: 0 #000;
+    width: 912px;
+    height: 895px;
+    padding-bottom: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 263px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.transferPannel {
+    margin: 5px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex: 1; Этот блок занимает всё оставшееся пространство */
+
+}
+
+
+.transferChioceArrow {
+    width: 20px;
+    height: 20px;
+    opacity: 50;
+
+    margin: auto;
+}
+
+.transferChoice {
+    align-items: center;
+    display: flex;
+    white-space: nowrap;
+
+    /* flex: 0; */
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.transferChioceValue {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    opacity: 0.8;
+}
+
+.transferTab {
+
+    /* width: 800px; */
+    margin-left: 50px;
+    margin-right: 50px;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    height: 665px;
+
+    border: 2px #5d79ee;
+    border-style: solid;
+    border-radius: 10px;
+
+    padding: 10px;
+    
+    display: flex;
+    /* flex: 0; */
+
+    overflow: auto;
+    box-sizing: border-box;
+
+}
+
+/* Стилизация скроллбара */
+.transferTab::-webkit-scrollbar {
+    width: 10px; /* Ширина полосы прокрутки */
+}
+
+.transferTab::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона полосы прокрутки */
+    border-radius: 10px;
+}
+
+.transferTab::-webkit-scrollbar-thumb {
+    background-color: #5d79ee; /* Цвет ползунка */
+    border-radius: 10px;
+    border: 2px solid #f1f1f1; 
+    /* Внутренний отступ ползунка, чтобы он не перекрывал границу */
+}
+
+.transferControlPannel {
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.actionTransferButton {
+
+    color: white;
+
+    background-color: #5d79ee;
+
+    border: 1px white;
+    border-radius: 8px;
+    border-style: solid;
+
+    padding: 20px;
+    width: 185px;
+    height: 60px;
+
+    text-align: center;
+
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15px;
+
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.transferHint {
+
+    width: 150px;
+    margin-right: 50px;
+    align-items: center;
+    display: flex;
+
+}
+
+.transferImgHint {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .notificationsUnread {
+    width: 40px;
+    height: 40px;
+    margin-right: -50px;
+    background-color: #5d79ee;
+    border-radius: 40px;
+    border: 2px solid #f1f1f1; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} */
+
+.notificationsUnread {
+    width: 40px;
+    height: 40px;
+    background-color: #5d79ee;
+    margin-right: -50px;
+    border-radius: 40px;
+    border: 2px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
